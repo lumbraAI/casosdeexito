@@ -511,13 +511,13 @@ window.show = function show(id) {
   else modal.setAttribute('open', '');
 }
 function setFilter(category) { $$('.filter').forEach(btn => btn.classList.toggle('active', btn.dataset.filter === category));
-  $$('.project').forEach(card => { if (category === 'todos' || card.dataset.category === category) { card.style.display = 'grid'; } else { card.style.display = 'none'; } }); }  $$
+  $$('.project').forEach(card => { if (category === 'todos' \vert{}\vert{} card.dataset.category === category) { card.style.display = 'grid'; } else { card.style.display = 'none'; } }); }  $$
 ('.filter').forEach(btn => btn.onclick = () => setFilter(btn.dataset.filter));
 $('#close').onclick = () => { const modal = $('#details'); if (typeof modal.close === 'function') modal.close(); else modal.removeAttribute('open'); };
 $('#details').addEventListener('click', e => { if(e.target.id === 'details') { if (typeof e.target.close === 'function') e.target.close(); else e.target.removeAttribute('open'); } });
 
 addEventListener('keydown', e => {
-  if($('#details').open || !['ArrowRight','ArrowLeft'].includes(e.key)) return; const a = $$('.project').filter(p => p.style.display !== 'none');
+  if($('#details').open \vert{}\vert{} !['ArrowRight','ArrowLeft'].includes(e.key)) return; const a = $$('.project').filter(p => p.style.display !== 'none');
   if(!a.length) return;
   let c = -1;
   a.forEach((p, i) => { if(p.getBoundingClientRect().top <= 140) c = i; });
