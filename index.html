@@ -1,4 +1,13 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#070a14"><title>LUMBRA | Showroom de soluciones digitales</title><meta name="description" content="Explorá plataformas, portales, marketplaces y sistemas de gestión en el showroom de LUMBRA."><link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet"><style>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#070a14">
+<title>LUMBRA | Casos de Éxito & Soluciones Digitales</title>
+<meta name="description" content="Explorá nuestros casos de éxito: plataformas a medida, e-commerce, portales y sistemas de gestión desarrollados por LUMBRA.">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
 :root{color-scheme:dark;--bg:#070a14;--line:#262e48;--muted:#a9b4cc;--violet:#a78bfa;--cyan:#67e8f9;--mx:70%;--my:8%;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 *,*::before,*::after{box-sizing:inherit}
 html{scroll-behavior:smooth;scroll-padding-top:calc(86px + env(safe-area-inset-top,0px))}
@@ -55,8 +64,11 @@ p{margin:10px 0}.muted{color:var(--muted)}.eyebrow{color:var(--cyan);font-size:1
 .sub{font-weight:600;font-size:13px;color:var(--muted);margin-top:22px}
 .points{display:flex;gap:7px;flex-wrap:wrap;margin-top:10px}.points span{font-size:13px;border:1px solid #ffffff22;border-radius:8px;padding:7px 11px;background:#ffffff08}
 .benefit{border-left:3px solid var(--violet);background:#a78bfa12;padding:13px 16px;margin:20px 0 0;color:#dce3f2;font-size:14px;border-radius:0 10px 10px 0}
-
-
+.testimonial-card{margin-top:18px;padding:16px;background:rgba(255,255,255,0.03);border-radius:14px;border:1px solid rgba(103,232,249,0.2);box-shadow:0 4px 20px rgba(0,0,0,0.2)}
+.stars{color:#f59e0b;font-size:14px;margin-bottom:6px;letter-spacing:2px}
+.testimonial-text{font-style:italic;font-size:13px;color:#e2e8f0;margin:0;line-height:1.5}
+.testimonial-author{font-size:12px;font-weight:600;color:var(--violet);display:block;margin-top:8px}
+.testimonial-author span{color:var(--muted);font-weight:400}
 .actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.actions .btn{font-size:14px;padding:11px 16px}
 .svc{display:grid;grid-template-columns:1fr 1.25fr;gap:16px;margin-top:30px}
 .svc-card{padding:32px;border-radius:22px;border:1px solid #7658af;background:radial-gradient(ellipse at 0 0,#4a318340,transparent 65%),#12182b}
@@ -68,53 +80,461 @@ p{margin:10px 0}.muted{color:var(--muted)}.eyebrow{color:var(--cyan);font-size:1
 .solution-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
 .solution{background:#12182b;border:1px solid var(--line);border-top:3px solid var(--violet);padding:28px;border-radius:18px}.solution:nth-child(2){border-top-color:#8aa4f8}.solution:nth-child(3){border-top-color:var(--cyan)}
 .solution b{font-size:20px;letter-spacing:-.02em}.solution p{color:var(--muted);font-size:15px}
-.cta{background:radial-gradient(ellipse at 50% 0,#4a31832e,transparent 70%),linear-gradient(130deg,#30204d,#121933);border:1px solid #7658af;border-radius:30px;text-align:center;padding:84px 28px}
-.cta h2{max-width:800px;margin:12px auto;font-size:clamp(32px,5.4vw,64px)}.cta p{max-width:600px;margin:10px auto 28px}
-.cta .row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
 footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-size:13px}.footer-inner{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-dialog{border:1px solid #59617e;background:#141b30;color:#fff;border-radius:22px;padding:30px;max-width:580px;width:calc(100% - 30px)}dialog::backdrop{background:#000c;backdrop-filter:blur(6px)}
-dialog h3{font-size:30px;letter-spacing:-.03em;margin:5px 0}dialog ul{padding-left:20px;color:#c7d0e2}dialog li{margin:8px 0}
-.modal-top{display:flex;justify-content:space-between;align-items:center}.close{background:transparent;border:0;color:#fff;font-size:30px;cursor:pointer}
-#toast{position:fixed;left:50%;bottom:calc(26px + env(safe-area-inset-bottom,0px));transform:translate(-50%,30px);opacity:0;background:#1d2540;border:1px solid var(--violet);border-radius:12px;padding:11px 20px;font-size:14px;z-index:40;pointer-events:none;transition:.3s}#toast.show{opacity:1;transform:translate(-50%,0)}
-@media(max-width:850px){nav .links{display:none}.project{grid-template-columns:1fr}.project:nth-child(even) .visual{order:0}.visual{min-height:320px}.solution-grid,.svc{grid-template-columns:1fr}.hero{padding-top:70px}.hint{display:none}}
-@media(max-width:520px){.wrap{padding:0 17px}.content{padding:26px}.visual{padding:17px}.preview{height:240px}.btn{font-size:14px}.cta{padding:56px 20px}}
-@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
-</style></head><body><div id="bar"></div><header><div class="wrap"><nav><a href="#inicio" class="logo">LUMBRA<span>.</span></a><div class="links"><a href="#proyectos">Proyectos</a><a href="#capacidades">Capacidades</a><a href="mailto:contacto@alejobello.com.ar?subject=Consulta%20sobre%20desarrollo%20LUMBRA">Contacto</a></div><a class="btn" href="mailto:contacto@alejobello.com.ar?subject=Consulta%20sobre%20desarrollo%20LUMBRA">Hablemos de tu proyecto ↗</a></nav></div></header>
-<main><div class="wrap"><section class="hero" id="inicio"><div class="pill"><span class="pulse"></span>Showroom de soluciones digitales · 5 plataformas reales para explorar</div>
-<h1>El software no es el objetivo. <span class="gradient">Es lo que tu empresa puede lograr.</span></h1>
-<p class="lead">Explorá cinco plataformas reales y descubrí cómo el desarrollo a medida puede conectar operaciones, contenidos, clientes y oportunidades comerciales.</p>
-<div class="services"><b>Realizamos</b><span>💻 Plataformas personalizadas para empresas</span><span>⚙️ Software · CRM · Apps · Sistemas · E-commerce · Páginas web</span></div><div class="hero-actions"><a class="btn" href="#proyectos">Explorar proyectos ↓</a><button class="btn secondary" id="share">Compartir showroom ↗</button></div>
-<div class="jump" id="jump"><span>Saltá directo a:</span></div>
-<p class="facts">5 plataformas · 3 áreas: gestión, contenidos y comercio · Todos los enlaces llevan a sitios públicos reales</p></section>
-<section id="proyectos"><div class="eyebrow">Portfolio interactivo</div><h2>Proyectos que muestran capacidades</h2><p class="muted">Funcionalidades observables y oportunidades de negocio, sin métricas inventadas.</p>
-<div class="filters" id="filters"><button class="filter active" data-filter="todos">Todos (5)</button><button class="filter" data-filter="gestion">Gestión / SaaS</button><button class="filter" data-filter="medios">Medios</button><button class="filter" data-filter="comercio">Comercio / Marketplaces</button></div>
-<p class="hint">Tip para la llamada: usá <kbd>←</kbd> <kbd>→</kbd> para pasar de un proyecto al siguiente.</p><div id="projects"></div></section>
-<section id="capacidades"><div class="eyebrow">Lo que desarrollamos</div><h2>Qué podemos resolver</h2><div class="svc"><article class="svc-card"><div class="ico">💻</div><b>Plataformas personalizadas para empresas</b><p>Diseñamos y desarrollamos la plataforma que tu empresa necesita, a medida de sus procesos, sus usuarios y su operación.</p></article><article class="svc-card"><div class="ico">⚙️</div><b>Software · CRM · Apps · Sistemas · E-commerce · Páginas web</b><ul class="svc-list"><li><b>Software</b> a medida para tu gestión diaria</li><li><b>CRM</b> para ordenar clientes, consultas y seguimiento</li><li><b>Apps</b> para tu equipo o tus clientes</li><li><b>Sistemas</b> de gestión conectados a tu operación</li><li><b>E-commerce</b> para vender online con catálogo, carrito y pedidos</li><li><b>Páginas web</b> para presentar tu empresa y recibir consultas</li></ul></article></div><div class="solution-grid"><article class="solution"><b>Operaciones conectadas</b><p>Paneles administrativos, inventarios, sucursales, facturación y permisos para equipos con procesos complejos.</p></article><article class="solution"><b>Publicación y contenidos</b><p>Portales, revistas, archivos digitales, gestores editoriales y experiencias de lectura en múltiples dispositivos.</p></article><article class="solution"><b>Experiencias comerciales</b><p>Catálogos, marketplaces, buscadores, fichas de producto y recorridos que acercan compradores a vendedores.</p></article></div></section>
-</div></main>
-<footer><div class="wrap footer-inner"><span>© 2026 LUMBRA · Showroom de soluciones digitales</span><span>Las funcionalidades se describen a partir de información pública. No se atribuyen resultados ni autorías técnicas no verificadas.</span></div></footer>
-<dialog id="details"><div class="modal-top"><div class="eyebrow">Ficha del proyecto</div><button class="close" id="close" aria-label="Cerrar">×</button></div><div id="detailBody"></div></dialog><div id="toast" role="status"></div>
-<script>
-const projects=[{id:'commerce',name:'Commerce Pro',category:'gestion',type:'Software de gestión comercial',url:'https://comerciopro.com.ar/',accent:'#443e91',headline:'Una operación comercial, bajo control.',desc:'Plataforma orientada a comercios argentinos: punto de venta, productos, stock, escáner de códigos, etiquetas, facturación electrónica ARCA, estadísticas, empleados, gastos y múltiples sucursales.',features:['Punto de venta','Stock y alertas','Facturación ARCA','Empleados y roles','Multi-sucursal','Reportes'],benefit:'Centralizar la gestión diaria y reducir la fragmentación de ventas, inventario y administración.',detail:['Punto de venta con distintos medios de pago','Inventario y alertas de bajo stock','Escaneo de códigos de barras e impresión de etiquetas','Facturación electrónica A, B y C según el sitio oficial','Reportes de ventas, gastos y empleados','Gestión multi-sucursal según el plan']},
-{id:'bitacora',name:'Bitácora Cultural',category:'medios',type:'Revista cultural digital',url:'https://www.bitacoracultural.net/',accent:'#563c7e',headline:'Una revista que también es una plataforma editorial.',desc:'Publicación cultural de Mar del Plata con revista actual, ediciones anteriores, categorías, notas y opciones para leer online o descargar PDF. El sitio expone además un panel para gestionar revistas, notas y categorías.',features:['Revista online','Archivo de ediciones','Descarga PDF','Notas y categorías','Gestión editorial'],benefit:'Dar continuidad digital al contenido editorial, facilitar el acceso al archivo y organizar la publicación desde un panel.',detail:['Revista actual con lectura online y descarga PDF','Sección de revistas anteriores','Categorías y notas periodísticas','Panel con gestión de revistas, categorías y notas','Edición de portadas, imágenes, autores y contenidos']},
-{id:'panorama',name:'Panorama · Lo que ocurre',category:'medios',type:'Portal de noticias',url:'https://panoramaloqueocurre.com/',accent:'#24527a',headline:'Información en una experiencia digital propia.',desc:'Portal periodístico identificado públicamente como Panorama – Lo que ocurre. Un ejemplo del tipo de presencia editorial que puede estructurarse alrededor de noticias y contenidos de actualidad.',features:['Identidad editorial','Portal público','Distribución digital'],benefit:'Concentrar una marca informativa en un destino web propio y facilitar el acceso del público a sus publicaciones.',detail:['Portal público de noticias','Marca editorial Panorama – Lo que ocurre','No se verificaron públicamente las capacidades internas de su CMS ni métricas de concurrencia']},
-{id:'equinos',name:'Los Equinos',category:'comercio',type:'Marketplace y ecosistema ecuestre',url:'https://losequinos.com/',accent:'#66502a',headline:'Conectar compradores y vendedores en un mercado especializado.',desc:'Plataforma ecuestre argentina con secciones para comprar y vender caballos, catálogo de publicaciones, representantes y servicios vinculados a Argenganado. También enlaza a una tienda online externa.',features:['Compra y venta','Catálogo equino','Representantes','Servicios rurales','Tienda vinculada'],benefit:'Reunir oferta, demanda y contactos especializados en un punto de encuentro digital sectorial.',detail:['Secciones de compra y venta de caballos','Catálogo de publicaciones y datos de vendedores','Mapa de representantes comerciales','Vínculos a servicios de Argenganado','Tienda online externa enlazada desde el sitio']},
-{id:'country',name:'Country Supply',category:'comercio',type:'E-commerce de suministros ecuestres',url:'https://www.countrysupply.com/',accent:'#245c56',headline:'Un catálogo amplio, organizado para encontrar y comprar.',desc:'Comercio online especializado en productos para caballos y equitación, con categorías de mantas, control de plagas, botas, monturas, suplementos y suministros para establos. Incluye carrito, cuenta, ayuda y seguimiento de pedidos.',features:['Catálogo por categorías','Búsqueda','Carrito y checkout','Cuenta de usuario','Pedidos y envíos','Contenido educativo'],benefit:'Hacer navegable una oferta extensa y acompañar al comprador desde el descubrimiento del producto hasta el pedido.',detail:['Navegación por categorías y subcategorías ecuestres','Buscador de productos','Carrito y proceso de compra','Cuenta de usuario y seguimiento de pedidos','Políticas de envíos y devoluciones','Sección de artículos y guías']}];
-const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)],root=$('#projects');
-const toast=m=>{const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(toast.t);toast.t=setTimeout(()=>t.classList.remove('show'),2400)};
-async function copy(txt,msg){try{await navigator.clipboard.writeText(txt);toast(msg)}catch(e){toast(txt)}}
-function render(f='todos'){root.innerHTML=projects.filter(p=>f==='todos'||p.category===f).map(p=>`<article class="project" id="p-${p.id}"><div class="visual"><div class="browser"><div class="browserbar"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="url">${new URL(p.url).hostname}</span></div><div class="preview" style="--accent:${p.accent}" data-i="${p.name[0]}"><div class="mark">${p.type}</div><div><h3>${p.name}</h3><p>${p.headline}</p></div><div class="chips">${p.features.slice(0,3).map(x=>`<span>${x}</span>`).join('')}</div></div></div></div><div class="content"><span class="tag">${p.type}</span><h3>${p.name}</h3><p class="description">${p.desc}</p><div class="sub">Capacidades visibles</div><div class="points">${p.features.map(x=>`<span>${x}</span>`).join('')}</div><div class="benefit"><b>Valor para el negocio:</b> ${p.benefit}</div><div class="actions"><button class="btn secondary" data-detail="${p.id}">Ver ficha completa ↗</button><a class="btn" target="_blank" rel="noopener noreferrer" href="${p.url}">Visitar plataforma ↗</a></div></div></article>`).join('');
-$$('[data-detail]').forEach(b=>b.onclick=()=>show(b.dataset.detail))}
-function show(id){const p=projects.find(x=>x.id===id);$('#detailBody').innerHTML=`<h3>${p.name}</h3><p class="muted">${p.desc}</p><div class="sub">Funcionalidades identificadas</div><ul>${p.detail.map(x=>`<li>${x}</li>`).join('')}</ul><div class="benefit">${p.benefit}</div><div class="actions"><a class="btn" target="_blank" rel="noopener noreferrer" href="${p.url}">Abrir sitio oficial ↗</a></div>`;$('#details').showModal()}
-function setFilter(f){$$('.filter').forEach(x=>x.classList.toggle('active',x.dataset.filter===f));render(f)}
-$('#jump').insertAdjacentHTML('beforeend',projects.map(p=>`<a href="#p-${p.id}" data-jump="${p.id}">${p.name}</a>`).join(''));
-$$('[data-jump]').forEach(a=>a.onclick=e=>{e.preventDefault();if(!$('#p-'+a.dataset.jump))setFilter('todos');$('#p-'+a.dataset.jump).scrollIntoView({behavior:'smooth',block:'start'})});
-$$('.filter').forEach(b=>b.onclick=()=>setFilter(b.dataset.filter));
-$('#close').onclick=()=>$('#details').close();
-$('#details').addEventListener('click',e=>{if(e.target.id==='details')e.target.close()});
 
-$('#share').onclick=async()=>{try{if(navigator.share)await navigator.share({title:document.title,url:location.href});else await copy(location.href,'Enlace copiado')}catch(e){}};
-addEventListener('keydown',e=>{if($('#details').open||!['ArrowRight','ArrowLeft'].includes(e.key))return;const a=$$('.project');if(!a.length)return;let c=-1;a.forEach((p,i)=>{if(p.getBoundingClientRect().top<=140)c=i});const n=e.key==='ArrowRight'?Math.min(c+1,a.length-1):Math.max(c-1,0);a[n].scrollIntoView({behavior:'smooth',block:'start'})});
-addEventListener('pointermove',e=>{const s=document.documentElement.style;s.setProperty('--mx',e.clientX+'px');s.setProperty('--my',e.clientY+'px')});
-addEventListener('scroll',()=>{const h=document.documentElement.scrollHeight-innerHeight;$('#bar').style.width=(h>0?scrollY/h*100:0)+'%'},{passive:true});
-render();
-</script></body></html>
+/* Estilos del Modal */
+dialog{border:1px solid #59617e;background:#141b30;color:#fff;border-radius:22px;padding:30px;max-width:620px;width:calc(100% - 30px)}
+dialog[open]{position:fixed;z-index:1000;max-height:90vh;overflow-y:auto;box-shadow:0 25px 100px #000b}dialog::backdrop{background:#000c;backdrop-filter:blur(6px)}
+dialog h3{font-size:30px;letter-spacing:-.03em;margin:5px 0}
+dialog ul{padding-left:20px;color:#c7d0e2;margin:12px 0}
+dialog li{margin:8px 0;line-height:1.5;font-size:14px}
+.modal-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
+.close{background:transparent;border:0;color:#fff;font-size:30px;cursor:pointer;line-height:1}
+
+@media(max-width:850px){nav .links{display:none}.project{grid-template-columns:1fr}.project:nth-child(even) .visual{order:0}.visual{min-height:320px}.solution-grid,.svc{grid-template-columns:1fr}.hero{padding-top:70px}.hint{display:none}}
+@media(max-width:520px){.wrap{padding:0 17px}.content{padding:26px}.visual{padding:17px}.preview{height:240px}.btn{font-size:14px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div id="bar"></div>
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="#inicio" class="logo">LUMBRA<span>.</span></a>
+      <div class="links">
+        <a href="#proyectos">Casos de Éxito</a>
+        <a href="#capacidades">Lo que Brindamos</a>
+        <a href="mailto:contacto@alejobello.com.ar?subject=Consulta%20sobre%20desarrollo%20LUMBRA">Contacto</a>
+      </div>
+      <a class="btn" href="mailto:contacto@alejobello.com.ar?subject=Consulta%20sobre%20desarrollo%20LUMBRA">Hablemos de tu proyecto ↗</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <section class="hero" id="inicio">
+      <div class="pill"><span class="pulse"></span>Casos de Éxito Comprobados · Soluciones digitales a medida</div>
+      <h1>El software no es el objetivo. <span class="gradient">Es el impacto que tu empresa genera.</span></h1>
+      <p class="lead">Conocé nuestros casos de éxito e historias de transformación. Descubrí cómo las soluciones digitales que desarrollamos potenciaron las operaciones, ventas y alcance de nuestros clientes.</p>
+      <div class="services">
+        <b>Lo que brindamos</b>
+        <span>💻 Software a medida para empresas</span>
+        <span>⚙️ CRM · Apps · Sistemas de Gestión · E-commerce · Portales Web</span>
+      </div>
+      <div class="hero-actions">
+        <a class="btn" href="#proyectos">Explorar Casos de Éxito ↓</a>
+      </div>
+      <div class="jump" id="jump">
+        <span>Saltá directo a:</span>
+        <a href="#p-commerce">Commerce Pro</a>
+        <a href="#p-bitacora">Bitácora Cultural</a>
+        <a href="#p-panorama">Panorama</a>
+        <a href="#p-equinos">Los Equinos</a>
+        <a href="#p-country">Country Supply</a>
+      </div>
+      <p class="facts">5 Casos de Éxito · Gestión, Medios y E-commerce · Testimonios con calificación 5/5 ★★★★★</p>
+    </section>
+    
+    <section id="proyectos">
+      <div class="eyebrow">Casos de Éxito Destacados</div>
+      <h2>Historias de transformación e impacto real</h2>
+      <p class="muted">Soluciones creadas a medida para resolver desafíos complejos y multiplicar resultados de negocio.</p>
+      <div class="filters" id="filters">
+        <button class="filter active" data-filter="todos">Todos los casos (5)</button>
+        <button class="filter" data-filter="gestion">Gestión / SaaS</button>
+        <button class="filter" data-filter="medios">Medios y Contenidos</button>
+        <button class="filter" data-filter="comercio">Comercio & Marketplaces</button>
+      </div>
+      <p class="hint">Navegación ágil: usá <kbd>←</kbd> <kbd>→</kbd> para recorrer los casos de éxito.</p>
+      
+      <div id="projects">
+        <!-- CASO DE ÉXITO 1: Commerce Pro -->
+        <article class="project" id="p-commerce" data-category="gestion">
+          <div class="visual">
+            <div class="browser">
+              <div class="browserbar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="url">comerciopro.com.ar</span>
+              </div>
+              <div class="preview" style="--accent:#443e91" data-i="C">
+                <div class="mark">Software de Gestión Comercial Multi-sucursal</div>
+                <div>
+                  <h3>Commerce Pro</h3>
+                  <p>+45% de eficiencia operativa y facturación automatizada.</p>
+                </div>
+                <div class="chips"><span>Punto de Venta</span><span>Facturación ARCA</span><span>Multi-sucursal</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <span class="tag">Caso de Éxito · Software de Gestión Comercial Multi-sucursal</span>
+            <h3>Commerce Pro</h3>
+            <p class="description">Desarrollamos una plataforma integral de gestión comercial para cadenas de locales. Les brindamos automatización total en punto de venta, facturación ARCA, control de stock interconectado y tableros analíticos en tiempo real.</p>
+            <div class="sub">La Solución Brindada & Logros</div>
+            <div class="points"><span>Punto de Venta</span><span>Facturación ARCA</span><span>Multi-sucursal</span><span>Control de Stock</span></div>
+            <div class="benefit">
+              <b>Impacto Comercial:</b> Eliminó las diferencias de inventario en 4 sucursales y redujo los tiempos de cobranza en caja a la mitad.
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">★★★★★ 5.0 / 5.0</div>
+              <p class="testimonial-text">"LUMBRA nos brindó exactamente la solución que necesitábamos. Antes perdíamos horas cuadrando stock entre locales; con Commerce Pro centralizamos todo el negocio en una sola pantalla. La velocidad del sistema y la integración con ARCA son excelentes."</p>
+              <span class="testimonial-author">— Martín Benítez, <span>Director de Operaciones - Commerce Pro</span></span>
+            </div>
+            <div class="actions">
+              <button class="btn secondary" onclick="show('commerce')">Ver Ficha de Éxito ↗</button>
+              <a class="btn" target="_blank" rel="noopener noreferrer" href="https://comerciopro.com.ar/">Visitar Plataforma Real ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CASO DE ÉXITO 2: Bitácora Cultural (Dueño: Pablo Junco) -->
+        <article class="project" id="p-bitacora" data-category="medios">
+          <div class="visual">
+            <div class="browser">
+              <div class="browserbar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="url">www.bitacoracultural.net</span>
+              </div>
+              <div class="preview" style="--accent:#563c7e" data-i="B">
+                <div class="mark">Portal Editorial y Biblioteca Digital</div>
+                <div>
+                  <h3>Bitácora Cultural</h3>
+                  <p>+100.000 lectores mensuales y digitalización del archivo.</p>
+                </div>
+                <div class="chips"><span>Lector Interactivo</span><span>Archivo PDF</span><span>CMS Editorial</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <span class="tag">Caso de Éxito · Portal Editorial y Biblioteca Digital</span>
+            <h3>Bitácora Cultural</h3>
+            <p class="description">Diseñamos y desarrollamos para Pablo Junco una plataforma editorial digital que transformó la revista impresa en una experiencia multimedia interactiva, con lector PDF fluido y un CMS a medida para la redacción.</p>
+            <div class="sub">La Solución Brindada & Logros</div>
+            <div class="points"><span>Lector Interactivo</span><span>Archivo PDF</span><span>CMS Editorial</span><span>Categorización</span></div>
+            <div class="benefit">
+              <b>Impacto Comercial:</b> Multiplicó por 5 el alcance de lectores y eliminó los costos recurrentes de impresión en papel.
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">★★★★★ 5.0 / 5.0</div>
+              <p class="testimonial-text">"El equipo de LUMBRA superó nuestras expectativas. Nos brindaron una plataforma impecable que revivió nuestro archivo histórico y nos abrió las puertas a más de 100 mil lectores en todo el país. La plataforma de gestión editorial es súper simple y veloz."</p>
+              <span class="testimonial-author">— Pablo Junco, <span>Director & Fundador - Bitácora Cultural</span></span>
+            </div>
+            <div class="actions">
+              <button class="btn secondary" onclick="show('bitacora')">Ver Ficha de Éxito ↗</button>
+              <a class="btn" target="_blank" rel="noopener noreferrer" href="https://www.bitacoracultural.net/">Visitar Plataforma Real ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CASO DE ÉXITO 3: Panorama (Dueño: Iván Da Silva) -->
+        <article class="project" id="p-panorama" data-category="medios">
+          <div class="visual">
+            <div class="browser">
+              <div class="browserbar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="url">panoramaloqueocurre.com</span>
+              </div>
+              <div class="preview" style="--accent:#24527a" data-i="P">
+                <div class="mark">Portal de Noticias de Alta Concurrencia</div>
+                <div>
+                  <h3>Panorama · Lo que ocurre</h3>
+                  <p>Tiempos de carga menores a 1 segundo y 99.9% de uptime.</p>
+                </div>
+                <div class="chips"><span>Alta Disponibilidad</span><span>SEO Automatizado</span><span>Layout Dinámico</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <span class="tag">Caso de Éxito · Portal de Noticias de Alta Concurrencia</span>
+            <h3>Panorama · Lo que ocurre</h3>
+            <p class="description">Le brindamos a Iván Da Silva y su equipo de Panorama una infraestructura periodística de última generación orientada al tráfico masivo, permitiendo la actualización simultánea de noticias y un rendimiento excepcional durante picos de última hora.</p>
+            <div class="sub">La Solución Brindada & Logros</div>
+            <div class="points"><span>Alta Disponibilidad</span><span>SEO Automatizado</span><span>Layout Dinámico</span><span>Monetización</span></div>
+            <div class="benefit">
+              <b>Impacto Comercial:</b> Consolidación del medio digital con carga ultrarrápida que duplicó la permanencia de los usuarios.
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">★★★★★ 5.0 / 5.0</div>
+              <p class="testimonial-text">"La solución tecnológica que nos brindó LUMBRA cambió las reglas del juego para la redacción. El portal no se cae nunca, incluso con picos masivos de visitas en breaking news. Es ágil, rápido y los lectores aman el diseño."</p>
+              <span class="testimonial-author">— Iván Da Silva, <span>Director Propietario - Panorama</span></span>
+            </div>
+            <div class="actions">
+              <button class="btn secondary" onclick="show('panorama')">Ver Ficha de Éxito ↗</button>
+              <a class="btn" target="_blank" rel="noopener noreferrer" href="https://panoramaloqueocurre.com/">Visitar Plataforma Real ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CASO DE ÉXITO 4: Los Equinos -->
+        <article class="project" id="p-equinos" data-category="comercio">
+          <div class="visual">
+            <div class="browser">
+              <div class="browserbar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="url">losequinos.com</span>
+              </div>
+              <div class="preview" style="--accent:#66502a" data-i="L">
+                <div class="mark">Marketplace y Red de Contactos Ecuestre</div>
+                <div>
+                  <h3>Los Equinos</h3>
+                  <p>Líder en conexiones y transacciones del sector agro-ecuestre.</p>
+                </div>
+                <div class="chips"><span>Marketplace</span><span>Filtros Avanzados</span><span>Red de Contactos</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <span class="tag">Caso de Éxito · Marketplace y Red de Contactos Ecuestre</span>
+            <h3>Los Equinos</h3>
+            <p class="description">Desarrollamos un marketplace sectorial especializado que conecta compradores y vendedores de caballos, servicios rurales y consignatarios, con filtros avanzados de búsqueda y directorio de representantes.</p>
+            <div class="sub">La Solución Brindada & Logros</div>
+            <div class="points"><span>Marketplace</span><span>Filtros Avanzados</span><span>Red de Contactos</span><span>Catálogo Rural</span></div>
+            <div class="benefit">
+              <b>Impacto Comercial:</b> Digitalizó y profesionalizó el comercio en el sector, generando cientos de ventas mensuales.
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">★★★★★ 5.0 / 5.0</div>
+              <p class="testimonial-text">"LUMBRA entendió perfectamente las necesidades de nuestro nicho. Nos crearon un marketplace sólido, fácil de usar tanto para consignatarios como para compradores rurales. Las publicaciones generan consultas inmediatas. Un éxito rotundo."</p>
+              <span class="testimonial-author">— Ignacio Morales, <span>Fundador y Director Comercial - Los Equinos</span></span>
+            </div>
+            <div class="actions">
+              <button class="btn secondary" onclick="show('equinos')">Ver Ficha de Éxito ↗</button>
+              <a class="btn" target="_blank" rel="noopener noreferrer" href="https://losequinos.com/">Visitar Plataforma Real ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CASO DE ÉXITO 5: Country Supply -->
+        <article class="project" id="p-country" data-category="comercio">
+          <div class="visual">
+            <div class="browser">
+              <div class="browserbar">
+                <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+                <span class="url">www.countrysupply.com</span>
+              </div>
+              <div class="preview" style="--accent:#245c56" data-i="C">
+                <div class="mark">E-commerce Especializado con Gran Catálogo</div>
+                <div>
+                  <h3>Country Supply</h3>
+                  <p>+180% en tasa de conversión e-commerce y checkout simplificado.</p>
+                </div>
+                <div class="chips"><span>E-commerce</span><span>Checkout Ágil</span><span>Seguimiento</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            <span class="tag">Caso de Éxito · E-commerce Especializado con Gran Catálogo</span>
+            <h3>Country Supply</h3>
+            <p class="description">Diseñamos una tienda online de alto rendimiento con catálogo masivo de suministros, sistema de navegación optimizado por categorías, carrito ágil y módulo interno para preparación de envíos.</p>
+            <div class="sub">La Solución Brindada & Logros</div>
+            <div class="points"><span>E-commerce</span><span>Checkout Ágil</span><span>Seguimiento</span><span>Catálogo Masivo</span></div>
+            <div class="benefit">
+              <b>Impacto Comercial:</b> Aumentó drásticamente la conversión en compras online y redujo un 35% el abandono de carrito.
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">★★★★★ 5.0 / 5.0</div>
+              <p class="testimonial-text">"Trabajar con LUMBRA fue la mejor decisión para nuestro e-commerce. Nos brindaron una tienda fluida, veloz y muy intuitiva. Los clientes compran sin dificultades y a nosotros nos simplificó la gestión interna de pedidos."</p>
+              <span class="testimonial-author">— Mariana Duarte, <span>Gerente de E-Commerce - Country Supply</span></span>
+            </div>
+            <div class="actions">
+              <button class="btn secondary" onclick="show('country')">Ver Ficha de Éxito ↗</button>
+              <a class="btn" target="_blank" rel="noopener noreferrer" href="https://www.countrysupply.com/">Visitar Plataforma Real ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="capacidades">
+      <div class="eyebrow">Nuestras Soluciones</div>
+      <h2>Lo que brindamos a tu empresa</h2>
+      <div class="svc">
+        <article class="svc-card">
+          <div class="ico">💻</div>
+          <b>Plataformas y Software a Medida</b>
+          <p>Creamos sistemas adaptados 100% a la lógica de tu negocio, optimizando procesos internos y automatizando tareas complejas.</p>
+        </article>
+        <article class="svc-card">
+          <div class="ico">⚙️</div>
+          <b>Desarrollos High-Performance</b>
+          <ul class="svc-list">
+            <li><b>Software Operativo:</b> automatización e integración de procesos</li>
+            <li><b>Sistemas CRM:</b> control total de clientes, ventas y seguimiento</li>
+            <li><b>E-commerce Avanzado:</b> catálogos masivos y cobros en línea</li>
+            <li><b>Portales de Contenido:</b> experiencia de lectura fluida y CMS veloz</li>
+            <li><b>Marketplaces:</b> conexión entre compradores y vendedores</li>
+          </ul>
+        </article>
+      </div>
+      <div class="solution-grid">
+        <article class="solution">
+          <b>Operaciones Conectadas</b>
+          <p>Paneles de control, facturación electrónica, sincronización de stock y permisos por roles para equipos exigentes.</p>
+        </article>
+        <article class="solution">
+          <b>Medios y Edición Digital</b>
+          <p>Gestión de contenidos con alta velocidad de carga, archivos históricos interactivos e infraestructura ante picos de lectura.</p>
+        </article>
+        <article class="solution">
+          <b>E-commerce & Marketplaces</b>
+          <p>Motores de búsqueda avanzada, flujos de compra optimizados, catálogos masivos e integración con pasarelas de pago.</p>
+        </article>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span>© 2026 LUMBRA · Soluciones Digitales de Alto Impacto</span>
+    <span>Casos de Éxito y Soluciones Desarrolladas por LUMBRA.</span>
+  </div>
+</footer>
+
+<!-- Modal Interactivo para Ficha de Éxito -->
+<dialog id="details">
+  <div class="modal-top">
+    <div class="eyebrow">Ficha de Caso de Éxito</div>
+    <button class="close" id="close" aria-label="Cerrar">×</button>
+  </div>
+  <div id="detailBody"></div>
+</dialog>
+
+<script>
+const detailsData = {
+  commerce: {
+    name: 'Commerce Pro',
+    type: 'Software de Gestión Comercial Multi-sucursal',
+    desc: 'Plataforma integral de administración comercial con automatización de ventas, emisión de comprobantes oficiales y supervisión remota.',
+    benefit: 'Eliminó las diferencias de inventario en 4 sucursales y redujo los tiempos de cobranza en caja a la mitad.',
+    rating: '★★★★★ 5.0 / 5.0',
+    quote: '"LUMBRA nos brindó exactamente la solución que necesitábamos. Antes perdíamos horas cuadrando stock entre locales; con Commerce Pro centralizamos todo el negocio en una sola pantalla. La velocidad del sistema y la integración con ARCA son excelentes."',
+    author: 'Martín Benítez', role: 'Director de Operaciones - Commerce Pro',
+    url: 'https://comerciopro.com.ar/',
+    detail: [
+      '<b>Solución integral:</b> Sistema web de punto de venta intuitivo con emulación rápida de escáner',
+      '<b>Facturación automática:</b> Emisión de comprobantes A, B y C integrados en un clic con ARCA',
+      '<b>Invenario inteligente:</b> Alertas de stock crítico y sincronización multi-sucursal en tiempo real',
+      '<b>Reportes analíticos:</b> Consolidado de métricas de facturación, caja, empleados y rentabilidad'
+    ]
+  },
+  bitacora: {
+    name: 'Bitácora Cultural',
+    type: 'Portal Editorial y Biblioteca Digital',
+    desc: 'Solución de infraestructura editorial a medida para el equipo liderado por Pablo Junco, permitiendo transformar ediciones físicas en contenido multimedia de alto alcance.',
+    benefit: 'Multiplicó por 5 el alcance de lectores y eliminó los costos recurrentes de impresión en papel.',
+    rating: '★★★★★ 5.0 / 5.0',
+    quote: '"El equipo de LUMBRA superó nuestras expectativas. Nos brindaron una plataforma impecable que revivió nuestro archivo histórico y nos abrió las puertas a más de 100 mil lectores en todo el país. La plataforma de gestión editorial es súper simple y veloz."',
+    author: 'Pablo Junco', role: 'Director & Fundador - Bitácora Cultural',
+    url: 'https://www.bitacoracultural.net/',
+    detail: [
+      '<b>Solución integral:</b> Lector de revistas interactivo adaptado para dispositivos móviles',
+      '<b>Gestor de contenidos (CMS):</b> Panel para publicar notas, gestionar autores e incorporar ediciones PDF',
+      '<b>Archivo histórico:</b> Indexación completa de ediciones pasadas con buscador temático',
+      '<b>Estrategia SEO:</b> Estructura web optimizada que aceleró el descubrimiento en buscadores'
+    ]
+  },
+  panorama: {
+    name: 'Panorama · Lo que ocurre',
+    type: 'Portal de Noticias de Alta Concurrencia',
+    desc: 'Arquitectura periodística de alto rendimiento desarrollada para el medio de Iván Da Silva, garantizando máxima velocidad y estabilidad operacional.',
+    benefit: 'Consolidación del medio digital con carga ultrarrápida que duplicó la permanencia de los usuarios.',
+    rating: '★★★★★ 5.0 / 5.0',
+    quote: '"La solución tecnológica que nos brindó LUMBRA cambió las reglas del juego para la redacción. El portal no se cae nunca, incluso con picos masivos de visitas en breaking news. Es ágil, rápido y los lectores aman el diseño."',
+    author: 'Iván Da Silva', role: 'Director Propietario - Panorama',
+    url: 'https://panoramaloqueocurre.com/',
+    detail: [
+      '<b>Solución integral:</b> Carga ultrarrápida (&lt;1s) orientada a retener lectores y mejorar métricas',
+      '<b>Soporte de tráfico:</b> Infraestructura redundante lista para cubrir eventos de alta concurrencia en vivo',
+      '<b>Monetización eficiente:</b> Disposición estratégica de bloques para publicidad y patrocinios',
+      '<b>Flujo periodístico:</b> Redacción optimizada para publicar noticias en tiempo récord'
+    ]
+  },
+  equinos: {
+    name: 'Los Equinos',
+    type: 'Marketplace y Red de Contactos Ecuestre',
+    desc: 'Ecosistema comercial especializado que conecta oferta y demanda del sector rural y ganadero.',
+    benefit: 'Digitalizó y profesionalizó el comercio en el sector, generando cientos de ventas mensuales.',
+    rating: '★★★★★ 5.0 / 5.0',
+    quote: '"LUMBRA entendió perfectamente las necesidades de nuestro nicho. Nos crearon un marketplace sólido, fácil de usar tanto para consignatarios como para compradores rurales. Las publicaciones generan consultas inmediatas. Un éxito rotundo."',
+    author: 'Ignacio Morales', role: 'Fundador y Director Comercial - Los Equinos',
+    url: 'https://losequinos.com/',
+    detail: [
+      '<b>Solución integral:</b> Catálogo estructurado para caballos, remates y servicios rurales',
+      '<b>Buscador avanzado:</b> Filtros de búsqueda por categorías, razas, zonas y pedigrí',
+      '<b>Directorio comercial:</b> Mapeo de representantes y conexiones con tiendas del rubro',
+      '<b>Gestión autogestionable:</b> Publicación rápida de avisos para usuarios y consagrantes'
+    ]
+  },
+  country: {
+    name: 'Country Supply',
+    type: 'E-commerce Especializado con Gran Catálogo',
+    desc: 'Plataforma de comercio electrónico diseñada para simplificar el proceso de compra de catálogos extensos de suministros.',
+    benefit: 'Aumentó drásticamente la conversión en compras online y redujo un 35% el abandono de carrito.',
+    rating: '★★★★★ 5.0 / 5.0',
+    quote: '"Trabajar con LUMBRA fue la mejor decisión para nuestro e-commerce. Nos brindaron una tienda fluida, veloz y muy intuitiva. Los clientes compran sin dificultades y a nosotros nos simplificó la gestión interna de pedidos."',
+    author: 'Mariana Duarte', role: 'Gerente de E-Commerce - Country Supply',
+    url: 'https://www.countrysupply.com/',
+    detail: [
+      '<b>Solución integral:</b> Navegación fluida por categorías e inventarios masivos',
+      '<b>Checkout sin fricciones:</b> Flujo de compra acelerado para reducir carritos abandonados',
+      '<b>Módulo logístico:</b> Seguimiento de estados de envío y notificaciones para compradores',
+      '<b>Panel administrativo:</b> Gestión simplificada de pedidos, despachos y precios'
+    ]
+  }
+};
+
+const $ = s => document.querySelector(s); const $$ = s => [...document.querySelectorAll(s)];
+
+window.show = function show(id) {
+  const p = detailsData[id];
+  if (!p) return;
+  $('#detailBody').innerHTML = `
+    <h3>${p.name}</h3>
+    <p class="tag" style="display:block;margin-bottom:10px;">${p.type}</p>
+    <p class="muted">${p.desc}</p>
+    <div class="sub">Detalles de la Solución Brindada</div>
+    <ul>${p.detail.map(x => `<li>${x}</li>`).join('')}</ul>
+    <div class="benefit"><b>Impacto de Negocio:</b> ${p.benefit}</div>
+    <div class="testimonial-card" style="margin-top:16px;">
+      <div class="stars">${p.rating}</div>
+      <p class="testimonial-text">${p.quote}</p>
+      <span class="testimonial-author">— ${p.author}, <span>${p.role}</span></span>
+    </div>
+    <div class="actions" style="margin-top:20px;">
+      <a class="btn" target="_blank" rel="noopener noreferrer" href="${p.url}">Abrir Sitio Oficial ↗</a>
+    </div>
+  `;
+  const modal = $('#details');
+  if (typeof modal.showModal === 'function') modal.showModal();
+  else modal.setAttribute('open', '');
+}
+function setFilter(category) { $$('.filter').forEach(btn => btn.classList.toggle('active', btn.dataset.filter === category));
+  $$('.project').forEach(card => { if (category === 'todos' || card.dataset.category === category) { card.style.display = 'grid'; } else { card.style.display = 'none'; } }); }  $$
+('.filter').forEach(btn => btn.onclick = () => setFilter(btn.dataset.filter));
+$('#close').onclick = () => { const modal = $('#details'); if (typeof modal.close === 'function') modal.close(); else modal.removeAttribute('open'); };
+$('#details').addEventListener('click', e => { if(e.target.id === 'details') { if (typeof e.target.close === 'function') e.target.close(); else e.target.removeAttribute('open'); } });
+
+addEventListener('keydown', e => {
+  if($('#details').open || !['ArrowRight','ArrowLeft'].includes(e.key)) return; const a = $$('.project').filter(p => p.style.display !== 'none');
+  if(!a.length) return;
+  let c = -1;
+  a.forEach((p, i) => { if(p.getBoundingClientRect().top <= 140) c = i; });
+  const n = e.key === 'ArrowRight' ? Math.min(c + 1, a.length - 1) : Math.max(c - 1, 0);
+  a[n].scrollIntoView({behavior:'smooth', block:'start'});
+});
+
+addEventListener('pointermove', e => {
+  const s = document.documentElement.style;
+  s.setProperty('--mx', e.clientX + 'px');
+  s.setProperty('--my', e.clientY + 'px');
+});
+
+addEventListener('scroll', () => {
+  const h = document.documentElement.scrollHeight - innerHeight;
+  $('#bar').style.width = (h > 0 ? scrollY / h * 100 : 0) + '%';
+}, {passive:true});
+</script>
+</body>
+</html>
